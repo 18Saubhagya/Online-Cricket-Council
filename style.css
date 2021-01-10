@@ -577,7 +577,7 @@ h2{
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 130vh;
+  min-height: 135vh;
   background: #000;
   overflow: hidden;
 }
@@ -590,6 +590,9 @@ h2{
     justify-content: center;
     margin: 0;
     padding: 0;
+}
+.pranking .trank td,.pranking .trank th {
+  font-weight: 500;
 }
 .pcards_container{
   padding: 20px;
@@ -608,19 +611,19 @@ h2{
     align-items: center;
 }
 .prevs {
-    left: -2%;
+    left: 3%;
     margin-top: -25px;
 }
 .nexts {
-    right: -2%;
+    right: 3%;
     margin-top: -25px;
 }
 .prevss {
-    left: -2%;
+    left: 3%;
     margin-top: -15px;
 }
 .nextss {
-  right: -2%;
+  right: 3%;
     margin-top: -15px;
 }
 .ee{
@@ -650,6 +653,23 @@ h2{
     filter: hue-rotate(360deg);
     transform: rotate(360deg);
   }
+}
+@media screen and (max-width: 600px) {
+  .pcardr, .pcardrr{
+    width: 80%;
+      height: 20.75rem;
+      cursor: pointer;
+      background-image: linear-gradient(90deg, #8A6E2F, #D1B464);
+      align-items: center;
+  }
+  .pranking .trank td,.pranking .trank th {
+    padding: 5px 1px 1px 0;
+    font-size: 0.97rem;
+  }
+  .pranking .trank th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 }
 .glowing span{
   position: absolute;
@@ -852,7 +872,7 @@ h2{
 .tablef .trank tr:nth-child(odd){background-color: inherit;}
 @media screen and (max-width: 1100px){
   .statistics{
-    height: 180vh;
+    height: 220vh;
   }
   .stats{
     flex-wrap: wrap;
@@ -866,5 +886,10 @@ h2{
   }
   .foo{
     font-size: 1rem ;
+  }
+}
+@media screen and (max-width: 400px){
+  .statistics{
+    height: 190vh;
   }
 }
