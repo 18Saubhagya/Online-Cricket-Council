@@ -88,6 +88,7 @@ var inn=[];
 }
     document.getElementById("submit").addEventListener("click",function(){
       var na=document.getElementById("field").value;
+      na=na.trim();
       for(i=0;i<297;i++){
         if(na.toUpperCase()==a[i].toUpperCase()){
           document.getElementById("inno").innerHTML= inn[i];
