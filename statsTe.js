@@ -88,6 +88,7 @@ var inn2=[];
 }
     document.getElementById("submit").addEventListener("click",function(){
       var na=document.getElementById("field").value;
+      na=na.trim();
       for(i=0;i<297;i++){
         if(na.toUpperCase()==a2[i].toUpperCase()){
           document.getElementById("innt").innerHTML= inn2[i];
