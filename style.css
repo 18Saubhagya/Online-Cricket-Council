@@ -775,10 +775,10 @@ table.budt tbody th:first-child {
     background: #c3992673;
     transition: backgrounf 0.6s;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     table.budt {
-        font-size: 0.8em;
-        width: 90%;
+        font-size: 0.9em;
+        width: 75%;
     }
     .pad{
       padding: 3%;
