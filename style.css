@@ -159,6 +159,116 @@ h2{
   letter-spacing: 6px;
 }
 }
+.xr{
+  display: flex;
+    flex-flow: wrap;
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 4vh;
+}
+.rd{
+  display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+}
+.rd div{
+  width: 35%;
+}
+.rdt{
+  font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffdf85;
+    font-weight: 300;
+    /* letter-spacing: 1px; */
+    text-align: left;
+}
+.rdi a{
+  position: absolute;
+    text-align: center;
+    width: 35%;
+    height: 35vh;
+    font-size: 2vw;
+    color: #fff;
+    line-height: 35vh;
+    z-index: 1;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.rdi img{
+  max-width: 100%;
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+}
+@media screen and (max-width: 600px) {
+  .xr{
+      font-weight: 100;
+      font-size: 3vw;
+  }
+  .rd div{
+    width: 45%;
+  }
+  .rdt{
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffdf85;
+    font-weight: 200;
+    /* letter-spacing: 1px; */
+    text-align: left;
+  }
+  .rdi a{
+    position: absolute;
+    text-align: center;
+    width: 45%;
+    height: 45vh;
+    font-size: 3vw;
+    color: #fff;
+    line-height: 15vh;
+    z-index: 1;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+}
+#annual{
+  display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #8A6E2F, #D1B464);
+}
+#slider {
+  overflow: hidden;
+  width: 60%;
+    padding-bottom: 10%;
+}
+#slider figure img {
+   width: 20%;
+    float: left;
+   }
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
 #Home{
   background: #d1b464;
     padding: 5% 5% 3% 5%;
@@ -251,7 +361,6 @@ h2{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -292,6 +401,26 @@ h2{
   margin-top: 30px;
   font-weight: 900;
   padding-top: 100px;
+}
+.rrr{
+  display: block;
+    color: #D1B464;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+    padding-top: 0;
+}
+.xxr{
+  margin-top: 0;
+    padding: 15px;
+    font-size: 60px;
+}
+@media screen and (max-width: 600px){
+  .xxr{
+    font-size: 24px;
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 1100px){
   .textt{
@@ -565,6 +694,95 @@ h2{
   {
     transform:scale(0.75);
   }
+}
+#Budget{
+    margin: 0;
+    text-align: center;
+}
+.bud{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+}
+table.budt {
+    margin: 20px 0 0 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #212121;
+    color: #fff;
+    width: 50%;
+}
+.pad{
+  padding: 1.5%;
+}
+table.budt th, table.budt td {
+    text-align: center;
+}
+
+table.budt thead {
+    line-height: 12px;
+    background: linear-gradient(90deg, #8A6E2F, #D1B464);
+    text-transform: uppercase;
+}
+
+table.budt thead th {
+    color: #fff;
+    padding: 4%;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+}
+
+table.budt thead th:nth-child(1) {
+    width: 20%;
+    text-align: center;
+    padding-left: 20px;
+}
+
+table.budt thead th:nth-child(2) {
+    width: 30%;
+}
+
+table.budt tbody {
+    font-size: 1em;
+    line-height: 15px;
+}
+
+table.budt tbody tr {
+    border-top: 2px solid #D1B464;
+    transition: background 0.6s, color 0.6s;
+}
+
+table.budt tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+table.budt tbody tr:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+}
+
+table.budt tbody tr:hover td:first-child {
+    background: rgba(0,0,0,0);
+}
+
+table.budt tbody th:first-child {
+    text-align: center;
+    padding-left: 20px;
+    font-weight: 700;
+    background: #c3992673;
+    transition: backgrounf 0.6s;
+}
+@media screen and (max-width: 400px) {
+    table.budt {
+        font-size: 0.8em;
+        width: 90%;
+    }
+    .pad{
+      padding: 3%;
+    }
 }
 .pr{
   background: #000;
@@ -892,4 +1110,7 @@ h2{
   .statistics{
     height: 190vh;
   }
+}
+.xx{
+  padding: 15px 1px 15px 1px;
 }
